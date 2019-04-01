@@ -1,0 +1,29 @@
+Command line:
+   binadder_4bit_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51251
+
+Thu Mar 28 22:09:42 2019
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 821.592 Meg
+
+ Total Signals          : 98
+ Total Nets             : 51
+ Total Signal Drivers   : 26
+ Total Blocks           : 22
+ Total Primitive Blocks : 13
+ Total Processes        : 18
+ Total Traceable Variables  : 12
+ Total Scalar Nets and Variables : 415
+Total Line Count : 26
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 349.995 Meg
+
+Thu Mar 28 22:43:01 2019
+

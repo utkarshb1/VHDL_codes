@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Utkarsh\Documents\ISE\gates\half_full_adder.ncd
+OUTFILE=C:\Users\Utkarsh\Documents\ISE\gates\half_full_adder.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5ft256
+WORKINGDIR=C:\Users\Utkarsh\Documents\ISE\gates
+LICENSE=WebPack
+USER_INFO=211111044_0_0_816

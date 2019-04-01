@@ -1,0 +1,4 @@
+AR xor1 behavioral C:/Users/Utkarsh/Documents/ISE/parity_5_bit/xor1.vhd sub00/vhpl01 1552063632
+EN parity_5_bit_gen NULL C:/Users/Utkarsh/Documents/ISE/parity_5_bit/parity_5_bit_gen.vhd sub00/vhpl02 1552063633
+EN xor1 NULL C:/Users/Utkarsh/Documents/ISE/parity_5_bit/xor1.vhd sub00/vhpl00 1552063631
+AR parity_5_bit_gen behavioral C:/Users/Utkarsh/Documents/ISE/parity_5_bit/parity_5_bit_gen.vhd sub00/vhpl03 1552063634

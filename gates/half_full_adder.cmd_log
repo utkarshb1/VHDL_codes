@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/Utkarsh/Documents/ISE/gates/half_full_adder.xst" -ofn "C:/Users/Utkarsh/Documents/ISE/gates/half_full_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-ft256-5 half_full_adder.ngc half_full_adder.ngd  
+map -intstyle ise -p xc3s500e-ft256-5 -cm area -ir off -pr off -c 100 -o half_full_adder_map.ncd half_full_adder.ngd half_full_adder.pcf 
+par -w -intstyle ise -ol high -t 1 half_full_adder_map.ncd half_full_adder.ncd half_full_adder.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml half_full_adder.twx half_full_adder.ncd -o half_full_adder.twr half_full_adder.pcf 
+bitgen -intstyle ise -f half_full_adder.ut half_full_adder.ncd 

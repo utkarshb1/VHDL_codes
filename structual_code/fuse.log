@@ -1,0 +1,12 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Utkarsh/Documents/ISE/structual_code/binadder4_isim_beh.exe -prj C:/Users/Utkarsh/Documents/ISE/structual_code/binadder4_beh.prj work.binadder4 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Utkarsh/Documents/ISE/structual_code/half_adder.vhd" into library work
+Parsing VHDL file "C:/Users/Utkarsh/Documents/ISE/structual_code/full_adder.vhd" into library work
+Parsing VHDL file "C:/Users/Utkarsh/Documents/ISE/structual_code/binadder4.vhd" into library work
+Starting static elaboration
+ERROR:HDLCompiler:377 - "C:/Users/Utkarsh/Documents/ISE/structual_code/binadder4.vhd" Line 31: Entity port c does not match with type bit of component port
+ERROR:HDLCompiler:410 - "C:/Users/Utkarsh/Documents/ISE/structual_code/binadder4.vhd" Line 31: Expression has 2 elements ; expected 3
+ERROR:Simulator:777 - Static elaboration of top level VHDL design unit binadder4 in library work failed

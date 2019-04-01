@@ -1,0 +1,542 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: bin_4_adder.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "bin_4_adder.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "bin_4_adder"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-ft256
+
+---- Source Options
+Top Module Name                    : bin_4_adder
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Utkarsh/Documents/ISE/bin_4_adder/half_adder.vhd" in Library work.
+Entity <half_adder> compiled.
+Entity <half_adder> (Architecture <behavioral>) compiled.
+Entity <half_adder> (Architecture <conc>) compiled.
+Compiling vhdl file "C:/Users/Utkarsh/Documents/ISE/bin_4_adder/full_adder.vhd" in Library work.
+Architecture behavioral of Entity full_adder is up to date.
+Compiling vhdl file "C:/Users/Utkarsh/Documents/ISE/bin_4_adder/bin_4_adder.vhd" in Library work.
+Architecture behavioral of Entity bin_4_adder is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <bin_4_adder> in library <work> (architecture <behavioral>) with generics.
+	N = 3
+
+Analyzing hierarchy for entity <full_adder> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <half_adder> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <half_adder> in library <work> (architecture <conc>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <bin_4_adder> in library <work> (Architecture <behavioral>).
+	N = 3
+Entity <bin_4_adder> analyzed. Unit <bin_4_adder> generated.
+
+Analyzing Entity <full_adder> in library <work> (Architecture <behavioral>).
+Entity <full_adder> analyzed. Unit <full_adder> generated.
+
+Analyzing Entity <half_adder.1> in library <work> (Architecture <Behavioral>).
+Entity <half_adder.1> analyzed. Unit <half_adder.1> generated.
+
+Analyzing Entity <half_adder.2> in library <work> (Architecture <conc>).
+Entity <half_adder.2> analyzed. Unit <half_adder.2> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <half_adder_1>.
+    Related source file is "C:/Users/Utkarsh/Documents/ISE/bin_4_adder/half_adder.vhd".
+WARNING:Xst:1780 - Signal <k> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 1-bit latch for signal <s2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <c2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <half_adder_1> synthesized.
+
+
+Synthesizing Unit <half_adder_2>.
+    Related source file is "C:/Users/Utkarsh/Documents/ISE/bin_4_adder/half_adder.vhd".
+    Found 1-bit xor2 for signal <s2>.
+Unit <half_adder_2> synthesized.
+
+
+Synthesizing Unit <full_adder>.
+    Related source file is "C:/Users/Utkarsh/Documents/ISE/bin_4_adder/full_adder.vhd".
+WARNING:Xst:646 - Signal <t> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <full_adder> synthesized.
+
+
+Synthesizing Unit <bin_4_adder>.
+    Related source file is "C:/Users/Utkarsh/Documents/ISE/bin_4_adder/bin_4_adder.vhd".
+Unit <bin_4_adder> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 16
+ 1-bit latch                                           : 16
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <c2>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 16
+ 1-bit latch                                           : 16
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <h1/h2/c2> (without init value) has a constant value of 0 in block <bin_4_adder>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <bin_4_adder> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block bin_4_adder, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : bin_4_adder.ngr
+Top Level Output File Name         : bin_4_adder
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 13
+
+Cell Usage :
+# BELS                             : 27
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 18
+#      LUT3                        : 6
+#      VCC                         : 1
+# FlipFlops/Latches                : 15
+#      LDCE                        : 7
+#      LDCPE                       : 8
+# Clock Buffers                    : 4
+#      BUFG                        : 4
+# IO Buffers                       : 13
+#      IBUF                        : 8
+#      OBUF                        : 5
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500eft256-5 
+
+ Number of Slices:                       25  out of   4656     0%  
+ Number of Slice Flip Flops:             11  out of   9312     0%  
+ Number of 4 input LUTs:                 25  out of   9312     0%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    190     6%  
+    IOB Flip Flops:                       4
+ Number of GCLKs:                         4  out of     24    16%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+N0                                 | NONE(h1/h2/s2)         | 1     |
+b<0>                               | IBUF+BUFG              | 2     |
+h1/h1/c2                           | NONE(h2/h2/s2)         | 2     |
+b<1>                               | IBUF+BUFG              | 2     |
+q(h2/h3/Mxor_s2_Result1:O)         | NONE(*)(h3/h2/s2)      | 2     |
+b<2>                               | IBUF+BUFG              | 2     |
+r(h3/h3/Mxor_s2_Result1:O)         | NONE(*)(h4/h2/s2)      | 2     |
+b<3>                               | IBUF+BUFG              | 2     |
+-----------------------------------+------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------+------------------------+-------+
+Control Signal                               | Buffer(FF name)        | Load  |
+---------------------------------------------+------------------------+-------+
+h1/h1/c2_or0000(h1/h1/c2_or00001:O)          | NONE(h1/h1/c2)         | 1     |
+h1/h1/s2(h1/h1/s2:Q)                         | NONE(h1/h2/s2)         | 1     |
+h1/h1/s2_0_not0000(h1/h1/s2_and00001:O)      | NONE(h1/h1/s2)         | 1     |
+h1/h1/s2_or0000(h1/h1/s2_or00001:O)          | NONE(h1/h1/s2)         | 1     |
+h1/h2/s2_0_not0000(h1/h2/s2_and00001_INV_0:O)| NONE(h1/h2/s2)         | 1     |
+h2/h1/c2_or0000(h2/h1/c2_or00001:O)          | NONE(h2/h1/c2)         | 1     |
+h2/h1/s2_0_not0000(h2/h1/s2_and00001:O)      | NONE(h2/h1/s2)         | 1     |
+h2/h1/s2_or0000(h2/h1/s2_or00001:O)          | NONE(h2/h1/s2)         | 1     |
+h2/h2/c2_or0000(h2/h2/c2_or00001:O)          | NONE(h2/h2/c2)         | 1     |
+h2/h2/s2_0_not0000(h2/h2/s2_and00001:O)      | NONE(h2/h2/s2)         | 1     |
+h2/h2/s2_or0000(h2/h2/s2_or00001:O)          | NONE(h2/h2/s2)         | 1     |
+h3/h1/c2_or0000(h3/h1/c2_or00001:O)          | NONE(h3/h1/c2)         | 1     |
+h3/h1/s2_0_not0000(h3/h1/s2_and00001:O)      | NONE(h3/h1/s2)         | 1     |
+h3/h1/s2_or0000(h3/h1/s2_or00001:O)          | NONE(h3/h1/s2)         | 1     |
+h3/h2/c2_or0000(h3/h2/c2_or00001:O)          | NONE(h3/h2/c2)         | 1     |
+h3/h2/s2_0_not0000(h3/h2/s2_and00001:O)      | NONE(h3/h2/s2)         | 1     |
+h3/h2/s2_or0000(h3/h2/s2_or00001:O)          | NONE(h3/h2/s2)         | 1     |
+h4/h1/c2_or0000(h4/h1/c2_or00001:O)          | NONE(h4/h1/c2)         | 1     |
+h4/h1/s2_0_not0000(h4/h1/s2_and00001:O)      | NONE(h4/h1/s2)         | 1     |
+h4/h1/s2_or0000(h4/h1/s2_or00001:O)          | NONE(h4/h1/s2)         | 1     |
+h4/h2/c2_or0000(h4/h2/c2_or00001:O)          | NONE(h4/h2/c2)         | 1     |
+h4/h2/s2_0_not0000(h4/h2/s2_and00001:O)      | NONE(h4/h2/s2)         | 1     |
+h4/h2/s2_or0000(h4/h2/s2_or00001:O)          | NONE(h4/h2/s2)         | 1     |
+---------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 2.127ns
+   Maximum output required time after clock: 5.235ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'b<0>'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              2.127ns (Levels of Logic = 1)
+  Source:            a<0> (PAD)
+  Destination:       h1/h1/s2 (LATCH)
+  Destination Clock: b<0> falling
+
+  Data Path: a<0> to h1/h1/s2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.106   0.538  a_0_IBUF (a_0_IBUF)
+     LDCE:GE                   0.483          h1/h1/c2
+    ----------------------------------------
+    Total                      2.127ns (1.589ns logic, 0.538ns route)
+                                       (74.7% logic, 25.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'b<1>'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              2.127ns (Levels of Logic = 1)
+  Source:            a<1> (PAD)
+  Destination:       h2/h1/s2 (LATCH)
+  Destination Clock: b<1> falling
+
+  Data Path: a<1> to h2/h1/s2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.106   0.538  a_1_IBUF (a_1_IBUF)
+     LDCE:GE                   0.483          h2/h1/c2
+    ----------------------------------------
+    Total                      2.127ns (1.589ns logic, 0.538ns route)
+                                       (74.7% logic, 25.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'b<2>'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              2.127ns (Levels of Logic = 1)
+  Source:            a<2> (PAD)
+  Destination:       h3/h1/s2 (LATCH)
+  Destination Clock: b<2> falling
+
+  Data Path: a<2> to h3/h1/s2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.106   0.538  a_2_IBUF (a_2_IBUF)
+     LDCE:GE                   0.483          h3/h1/c2
+    ----------------------------------------
+    Total                      2.127ns (1.589ns logic, 0.538ns route)
+                                       (74.7% logic, 25.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'b<3>'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              2.127ns (Levels of Logic = 1)
+  Source:            a<3> (PAD)
+  Destination:       h4/h1/s2 (LATCH)
+  Destination Clock: b<3> falling
+
+  Data Path: a<3> to h4/h1/s2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.106   0.538  a_3_IBUF (a_3_IBUF)
+     LDCE:GE                   0.483          h4/h1/c2
+    ----------------------------------------
+    Total                      2.127ns (1.589ns logic, 0.538ns route)
+                                       (74.7% logic, 25.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'r'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              5.235ns (Levels of Logic = 2)
+  Source:            h4/h2/c2 (LATCH)
+  Destination:       cout (PAD)
+  Source Clock:      r falling
+
+  Data Path: h4/h2/c2 to cout
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCE:G->Q             1   0.588   0.509  h4/h2/c2 (h4/h2/c2)
+     LUT2:I0->O            1   0.612   0.357  h4/h3/Mxor_s2_Result1 (cout_OBUF)
+     OBUF:I->O                 3.169          cout_OBUF (cout)
+    ----------------------------------------
+    Total                      5.235ns (4.369ns logic, 0.866ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'b<3>'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.152ns (Levels of Logic = 2)
+  Source:            h4/h1/c2 (LATCH)
+  Destination:       cout (PAD)
+  Source Clock:      b<3> falling
+
+  Data Path: h4/h1/c2 to cout
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCE:G->Q             1   0.588   0.426  h4/h1/c2 (h4/h1/c2)
+     LUT2:I1->O            1   0.612   0.357  h4/h3/Mxor_s2_Result1 (cout_OBUF)
+     OBUF:I->O                 3.169          cout_OBUF (cout)
+    ----------------------------------------
+    Total                      5.152ns (4.369ns logic, 0.783ns route)
+                                       (84.8% logic, 15.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'q'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.114ns (Levels of Logic = 1)
+  Source:            h3/h2/s2 (LATCH)
+  Destination:       s<2> (PAD)
+  Source Clock:      q falling
+
+  Data Path: h3/h2/s2 to s<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCPE:G->Q            1   0.588   0.357  h3/h2/s2 (h3/h2/s2)
+     OBUF:I->O                 3.169          s_2_OBUF (s<2>)
+    ----------------------------------------
+    Total                      4.114ns (3.757ns logic, 0.357ns route)
+                                       (91.3% logic, 8.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'h1/h1/c2'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.114ns (Levels of Logic = 1)
+  Source:            h2/h2/s2 (LATCH)
+  Destination:       s<1> (PAD)
+  Source Clock:      h1/h1/c2 falling
+
+  Data Path: h2/h2/s2 to s<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCPE:G->Q            1   0.588   0.357  h2/h2/s2 (h2/h2/s2)
+     OBUF:I->O                 3.169          s_1_OBUF (s<1>)
+    ----------------------------------------
+    Total                      4.114ns (3.757ns logic, 0.357ns route)
+                                       (91.3% logic, 8.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'N0'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.114ns (Levels of Logic = 1)
+  Source:            h1/h2/s2 (LATCH)
+  Destination:       s<0> (PAD)
+  Source Clock:      N0 falling
+
+  Data Path: h1/h2/s2 to s<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCPE:G->Q            1   0.588   0.357  h1/h2/s2 (h1/h2/s2)
+     OBUF:I->O                 3.169          s_0_OBUF (s<0>)
+    ----------------------------------------
+    Total                      4.114ns (3.757ns logic, 0.357ns route)
+                                       (91.3% logic, 8.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.95 secs
+ 
+--> 
+
+Total memory usage is 238436 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

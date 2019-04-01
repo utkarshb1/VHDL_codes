@@ -1,0 +1,26 @@
+V3 12
+FL C:/Users/Utkarsh/Documents/ISE/bin_4_adder/bin_4_adder.vhd 2019/03/07.17:12:04 P.20131013
+EN work/bin_4_adder 1552063537 \
+      FL C:/Users/Utkarsh/Documents/ISE/bin_4_adder/bin_4_adder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/bin_4_adder/Behavioral 1552063538 \
+      FL C:/Users/Utkarsh/Documents/ISE/bin_4_adder/bin_4_adder.vhd \
+      EN work/bin_4_adder 1552063537 CP full_adder
+FL C:/Users/Utkarsh/Documents/ISE/bin_4_adder/full_adder.vhd 2019/03/07.18:49:46 P.20131013
+EN work/full_adder 1552063535 \
+      FL C:/Users/Utkarsh/Documents/ISE/bin_4_adder/full_adder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/full_adder/Behavioral 1552063536 \
+      FL C:/Users/Utkarsh/Documents/ISE/bin_4_adder/full_adder.vhd \
+      EN work/full_adder 1552063535 AR work/half_adder/Behavioral 1552063533 \
+      AR work/half_adder/conc 1552063534 CP half_adder
+FL C:/Users/Utkarsh/Documents/ISE/bin_4_adder/half_adder.vhd 2019/03/08.11:52:27 P.20131013
+EN work/half_adder 1552063532 \
+      FL C:/Users/Utkarsh/Documents/ISE/bin_4_adder/half_adder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/half_adder/Behavioral 1552063533 \
+      FL C:/Users/Utkarsh/Documents/ISE/bin_4_adder/half_adder.vhd \
+      EN work/half_adder 1552063532
+AR work/half_adder/conc 1552063534 \
+      FL C:/Users/Utkarsh/Documents/ISE/bin_4_adder/half_adder.vhd \
+      EN work/half_adder 1552063532

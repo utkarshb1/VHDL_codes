@@ -1,0 +1,7 @@
+EN half_adder NULL C:/Users/Utkarsh/Documents/ISE/bin_4_adder/half_adder.vhd sub00/vhpl00 1552063532
+EN bin_4_adder NULL C:/Users/Utkarsh/Documents/ISE/bin_4_adder/bin_4_adder.vhd sub00/vhpl05 1552063537
+AR bin_4_adder behavioral C:/Users/Utkarsh/Documents/ISE/bin_4_adder/bin_4_adder.vhd sub00/vhpl06 1552063538
+AR full_adder behavioral C:/Users/Utkarsh/Documents/ISE/bin_4_adder/full_adder.vhd sub00/vhpl04 1552063536
+EN full_adder NULL C:/Users/Utkarsh/Documents/ISE/bin_4_adder/full_adder.vhd sub00/vhpl03 1552063535
+AR half_adder behavioral C:/Users/Utkarsh/Documents/ISE/bin_4_adder/half_adder.vhd sub00/vhpl01 1552063533
+AR half_adder conc C:/Users/Utkarsh/Documents/ISE/bin_4_adder/half_adder.vhd sub00/vhpl02 1552063534

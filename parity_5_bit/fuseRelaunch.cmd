@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Utkarsh/Documents/ISE/parity_5_bit/parity_5_bit_gen_isim_beh.exe" -prj "C:/Users/Utkarsh/Documents/ISE/parity_5_bit/parity_5_bit_gen_beh.prj" "work.parity_5_bit_gen" 

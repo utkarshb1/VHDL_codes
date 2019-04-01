@@ -1,0 +1,7 @@
+NET "a" LOC = "P21";
+NET "b" LOC = "P27";
+NET "cin" LOC = "P29";
+NET "s(0)" LOC = "P20";
+NET "c(0)" LOC = "P226";
+NET "s(1)" LOC = "P46";
+NET "c(1)" LOC = "P51";

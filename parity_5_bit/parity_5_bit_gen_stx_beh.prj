@@ -1,0 +1,2 @@
+vhdl isim_temp "xor1.vhd"
+vhdl isim_temp "parity_5_bit_gen.vhd"

@@ -1,0 +1,2 @@
+vhdl work "xor1.vhd"
+vhdl work "parity_5_bit_gen.vhd"

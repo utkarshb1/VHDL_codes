@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Utkarsh/Documents/ISE/sipo/sipo1_isim_beh.exe" -prj "C:/Users/Utkarsh/Documents/ISE/sipo/sipo1_beh.prj" "work.sipo1" 

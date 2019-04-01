@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Utkarsh/Documents/ISE/parity_5_bit/parity_5_bit_gen.xst" -ofn "C:/Users/Utkarsh/Documents/ISE/parity_5_bit/parity_5_bit_gen.syr" 

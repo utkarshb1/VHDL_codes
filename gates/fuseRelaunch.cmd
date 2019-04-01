@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Utkarsh/Documents/ISE/gates/b2g_case_isim_beh.exe" -prj "C:/Users/Utkarsh/Documents/ISE/gates/b2g_case_beh.prj" "work.b2g_case" 

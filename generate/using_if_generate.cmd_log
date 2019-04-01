@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Utkarsh/Documents/ISE/generate/using_if_generate.xst" -ofn "C:/Users/Utkarsh/Documents/ISE/generate/using_if_generate.syr" 
