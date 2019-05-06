@@ -1,0 +1,29 @@
+Command line:
+   butterfly_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  65266
+
+Sat Mar 30 12:03:26 2019
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 822.321 Meg
+
+ Total Signals          : 5
+ Total Nets             : 10
+ Total Signal Drivers   : 2
+ Total Blocks           : 4
+ Total Primitive Blocks : 4
+ Total Processes        : 2
+ Total Traceable Variables  : 36
+ Total Scalar Nets and Variables : 492
+Total Line Count : 2
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 822.321 Meg
+
+Sat Mar 30 12:03:34 2019
+

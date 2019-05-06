@@ -1,0 +1,3 @@
+work	"butterfly.vhd"
+work	"fft_8pt.vhd"
+work	"fft_pkg.vhd"

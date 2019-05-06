@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Utkarsh/Documents/ISE/lab_eva/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Utkarsh/Documents/ISE/lab_eva/xst"
+elaborate
+-ifn fa.prj
+-ifmt mixed

@@ -1,0 +1,44 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Utkarsh/Documents/ISE/lab_eva/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.49 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Utkarsh/Documents/ISE/lab_eva/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.49 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Utkarsh/Documents/ISE/lab_eva/fa.vhd" in Library work.
+Entity <fa> compiled.
+ERROR:HDLParsers:164 - "C:/Users/Utkarsh/Documents/ISE/lab_eva/fa.vhd" Line 43. parse error, unexpected SIGNAL
+ERROR:HDLParsers:3312 - "C:/Users/Utkarsh/Documents/ISE/lab_eva/fa.vhd" Line 46. Undefined symbol 'hf1'.
+ERROR:HDLParsers:402 - "C:/Users/Utkarsh/Documents/ISE/lab_eva/fa.vhd" Line 46. Component 'hf' hf can not be used as a primary name.
+ERROR:HDLParsers:164 - "C:/Users/Utkarsh/Documents/ISE/lab_eva/fa.vhd" Line 46. parse error, unexpected PORT, expecting SEMICOLON
+ERROR:HDLParsers:3312 - "C:/Users/Utkarsh/Documents/ISE/lab_eva/fa.vhd" Line 47. Undefined symbol 'hf2'.
+ERROR:HDLParsers:402 - "C:/Users/Utkarsh/Documents/ISE/lab_eva/fa.vhd" Line 47. Component 'hf' hf can not be used as a primary name.
+ERROR:HDLParsers:164 - "C:/Users/Utkarsh/Documents/ISE/lab_eva/fa.vhd" Line 47. parse error, unexpected PORT, expecting SEMICOLON
+ERROR:HDLParsers:3312 - "C:/Users/Utkarsh/Documents/ISE/lab_eva/fa.vhd" Line 48. Undefined symbol 'hf3'.
+ERROR:HDLParsers:402 - "C:/Users/Utkarsh/Documents/ISE/lab_eva/fa.vhd" Line 48. Component 'hf' hf can not be used as a primary name.
+ERROR:HDLParsers:164 - "C:/Users/Utkarsh/Documents/ISE/lab_eva/fa.vhd" Line 48. parse error, unexpected PORT, expecting SEMICOLON
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.75 secs
+ 
+--> 
+
+Total memory usage is 221356 kilobytes
+
+Number of errors   :   10 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

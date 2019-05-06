@@ -1,0 +1,29 @@
+Command line:
+   encode8x3_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64936
+
+Thu May 02 11:55:09 2019
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 830.14 Meg
+
+ Total Signals          : 11
+ Total Nets             : 11
+ Total Signal Drivers   : 2
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 2
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 371
+Total Line Count : 34
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 672.592 Meg
+
+Thu May 02 11:56:20 2019
+

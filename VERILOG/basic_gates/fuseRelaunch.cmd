@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/utkar/Documents/ISE/VERILOG/basic_gates/b_gates_isim_beh.exe" -prj "C:/Users/utkar/Documents/ISE/VERILOG/basic_gates/b_gates_beh.prj" "work.b_gates" "work.glbl" 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/utkar/Documents/ISE/VHDL/gates/Basic_gates_isim_beh.exe" -prj "C:/Users/utkar/Documents/ISE/VHDL/gates/Basic_gates_beh.prj" "work.Basic_gates" 

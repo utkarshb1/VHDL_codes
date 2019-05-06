@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "C:/Users/Utkarsh/Documents/ISE/generate/binadder_4bit_isim_beh.exe" -prj "C:/Users/Utkarsh/Documents/ISE/generate/binadder_4bit_beh.prj" "work.binadder_4bit" 

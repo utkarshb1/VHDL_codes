@@ -1,0 +1,18 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/utkar/Documents/ISE/VERILOG/basic_gates/b_gates_isim_beh.exe -prj C:/Users/utkar/Documents/ISE/VERILOG/basic_gates/b_gates_beh.prj work.b_gates work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/utkar/Documents/ISE/VERILOG/basic_gates/b_gates.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 160648 KB
+Fuse CPU Usage: 218 ms
+Compiling module b_gates
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 2 Verilog Units
+Built simulation executable C:/Users/utkar/Documents/ISE/VERILOG/basic_gates/b_gates_isim_beh.exe
+Fuse Memory Usage: 166124 KB
+Fuse CPU Usage: 250 ms

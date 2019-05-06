@@ -1,0 +1,4 @@
+vhdl isim_temp "fft_pkg_dif.vhd"
+vhdl isim_temp "butterfly.vhd"
+vhdl isim_temp "fft_8_dif.vhd"
+vhdl isim_temp "tb_fft8_dif.vhd"

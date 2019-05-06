@@ -1,0 +1,35 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Utkarsh/Documents/ISE/diffft_8point/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.76 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Utkarsh/Documents/ISE/diffft_8point/xst
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.76 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Utkarsh/Documents/ISE/diffft_8point/fft_pkg_dif.vhd" in Library work.
+Package <fft_pkg_dif> compiled.
+Package body <fft_pkg_dif> compiled.
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.32 secs
+ 
+--> 
+
+Total memory usage is 221376 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
